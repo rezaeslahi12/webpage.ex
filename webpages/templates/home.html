@@ -1,0 +1,157 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+  </head>
+<style>
+  .navbar{
+   background-color: aqua;
+   text-align: center;
+   border: 0px;
+   width: 100%;
+  }
+  .temp{
+    font-size: small;
+    text-align: center;
+    vertical-align: top;
+   height: 15px; 
+   border-radius: .8em;
+   color: aliceblue;
+  }
+  .body{
+    background-image: url(media/bg.jpg);
+  }
+  
+        .footer {
+          height: 200px;
+            position: relative;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+        .class-right{
+          margin-left: 50%;
+          vertical-align: middle;
+         
+        }
+        .class-left{
+          margin-right: 50%;
+          vertical-align: top;
+        }
+        .class-left-left{
+         vertical-align: text-top;
+         margin-right: 25%;
+        }
+        .class-right-right{
+          vertical-align: auto;
+          
+        }
+        .class1{
+          margin-right: 75%;
+          vertical-align: top;
+        }
+
+  
+ 
+  
+  
+
+ 
+ 
+</style>
+<body class="body">
+
+  
+  <div><img src="{% static 'media/logo2.png'%}" alt="logo" width="15%" height="100px">
+     <img style="margin-left: 30%;" src="{% static 'media/logo3.png'%}" alt="logo3" width="200px" height="100px" >
+  </div>
+ <header class="navbar">
+  <table width="100%" height="60px" >
+    <tr class="navbar">
+      <td></td>
+      <td width="100px"><h3><a href="home.html">خانه</a></h3></td>
+      <td width="100px"><h3>مقالات</h3></td>
+      <td width="100px"><h3>درباره ما</h3></td>
+      <td width="300px"><h2>انجمن برنامه نویسان</h2></td>
+    </tr>
+    </table>
+</header>
+    <table  class="temp" width="100%" height="500px">
+     
+
+      <tr>
+        <th rowspan="8" width="90%"></th>
+        <td style="background-color: rgb(245, 81, 16);"><h2><a href="book.html">کتابخانه </a></h2></td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2><a href="picture.html">عکس ها</a></h2></td>      
+      </tr>
+      <tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2> <a href="program.html">نرم افزار ها</a> </h2></td>       
+      </tr>
+      <tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2> آموزش ها</h2></td>       
+    </tr>
+      <tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2> ویدیوها</h2></td>       
+    </tr>
+      <tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2> اخبار</h2></td>       
+    </tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2> منابع</h2></td>        
+    </tr>
+      <tr>
+        <td style="background-color: rgb(245, 81, 16);"><h2>تبلیغات</h2></td>      
+    </tr>
+    </table>
+    <footer class="footer">
+      
+      <div class="class-right">
+        
+          <h3 dir="rtl">به ما بپیوندید</h3>
+          <p dir="rtl"> سایت ما یکی از پرتلاش‌ترین و بروزترین وبسایت های آموزشی در سطح ایران است که همیشه تلاش کرده تا بتواند جدیدترین و بروزترین مقالات و دوره‌های آموزشی را در اختیار علاقه‌مندان ایرانی قرار دهد. تبدیل کردن برنامه نویسان ایرانی به بهترین برنامه نویسان جهان هدف ماست.</p>
+        
+      </div>
+      <div class="class1">
+        <div style="margin-bottom: 25%;">
+
+        
+        <h3>تماس با ما</h3>  
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+          <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-plus-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+          <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </div>
+
+      </div>
+    </div>
+
+   </footer>
+    </table>
+  </table>
+<!--<div><img src="media/welcome.jpg" alt="pic2" width="100%" height="100%"></div>
+<div style="background-color: rgb(27, 105, 129);">
+  <a class="dropdown-item" href="program.html">دانلود نرم افزار</a>
+  <a class="dropdown-item" href="book.html">کتابخانه</a>
+  <a class="dropdown-item" href="home.html"> صفحه اصلی</a>
+  <a class="dropdown-item" href="picture.html">عکس ها</a>
+</div>
+-->
+
+</div>
+
+</body>
+
+</html>
